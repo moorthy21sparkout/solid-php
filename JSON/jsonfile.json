@@ -1,0 +1,47 @@
+[
+{
+    "mobile":"ONEPLUS",
+    "brand":"ONE PLUS 6t",
+    "MRP":45000.00,
+    "price":34500.00,
+    "ram":"8GB",
+    "storage":128,
+    "image":"https://m.media-amazon.com/images/I/41N1wPvYQTL._SX300_SY300_QL70_FMwebp_.jpg",
+    "camera":"48MP",
+    "is available":"true"
+},
+{
+    "mobile":"realme",
+    "brand":"new serious",
+    "MRP":55000.00,
+    "price":44500.00,
+    "ram":"8GB",
+    "image":"https://m.media-amazon.com/images/I/318hjHwL17L.jpg",
+    "storage":128,
+    "camera":"48MP",
+    "isavailable":"false"
+},
+{
+    "mobile":"redme",
+    "brand":"redme 5G",
+    "MRP":25000.00,
+    "price":14500.00,
+    "ram":"8GB",
+    "storage":128,
+    "image":"https://m.media-amazon.com/images/I/41-2m5Oyv5L._SX300_SY300_QL70_FMwebp_.jpg",
+    "camera":"48MP",
+    "isavailable":"true"
+},
+
+{
+    "mobile":"vivo",
+    "brand":"vivo 32",
+    "MRP":75000.00,
+    "price":34500.00,
+    "ram":"8GB",
+    "storage":128,
+    "image":"https://m.media-amazon.com/images/I/410MvyxQm2L._SY300_SX300_.jpg",
+    "camera":"48MP",
+    "isavailable":"true"
+}
+]
