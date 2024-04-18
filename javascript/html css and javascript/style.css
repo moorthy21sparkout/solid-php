@@ -1,0 +1,89 @@
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 45px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 20px;
+}
+
+input[type="submit"] {
+    background-color: #e7e3eb;
+    color: rgb(10, 7, 7);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 550px;
+}
+
+input[type="submit"]:hover {
+    background-color: #09963f;
+    
+}
+.next-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.next-form h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 25px}
+    .next-form input[type="datetime-local"],
+    .next-form input[type="checkbox"],
+    .next-form input[type="file"],
+    .next-form textarea {
+        width: 50%;
+        margin-bottom: 35px;
+        padding: 10px;
+        border: 1px solid #ccc;
+      
+        box-sizing: border-box;
+    }
+
+    .next-form [type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+.next-form [type="submit"]:hover {
+    background-color: #e6190b;
+}
