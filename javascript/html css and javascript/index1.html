@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form id="support-info-form" class="next-form"  action="session1.php" method="post" enctype="multipart/form-data">
+<form name="sub_info" id="support-info-form" class="next-form"  action="session.php" method="post" enctype="multipart/form-data">
     <h2>Support Information</h2>
     <label for="datetime-local"><h4>date and time</h4></label>
     <input type="datetime-local" name="preferred_contact_datetime" required>
@@ -13,12 +13,7 @@
     Phone<input type="checkbox" name="preferred_contact_type[]" value="phone"><br>
     <input type="file" name="file"><br>
     <textarea name="description" placeholder="Description" required></textarea><br>
-    <button type="submit" id="submit-btn" name="sub">Submit</button>
-
-
-
-
-    <script src="add.js"></script>
+    <button type="submit" name="sub_info">Submit</button>
     </body>
 </form>
 </html>
