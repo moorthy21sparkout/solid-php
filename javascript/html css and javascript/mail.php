@@ -1,30 +1,46 @@
 <?php
 session_start();
-$mailto="moorthyponnusamy2019@gamil.com";
-$from=$_SESSION['email'];
-$name= $_SESSION['name'];
-$subject="personal information";
-$subject2="your message send successfully";
-$message= $_SESSION['name'];
-$message= $_SESSION['email'] ;
-$message=$_SESSION['phone'] ;
-$message=$_SESSION['gender'];
-$message=$_SESSION['address'];
-$message=$_SESSION["preferred_contact_datetime"];
-$message=$_SESSION["preferred_contact_type[]"];
-$message=$_SESSION["description"];
-$message2="dear: ".$_SESSION['name']."thank you for conecting!";
-$headers="from: ".$from;
-$headers2="from: ".$mailto;
-$result1=mail($mailto,$subject,$message,$headers);
-$result2=mail($from,$subject2,$message2,$headers2);
-if($result1 && $result2)
-{
-    echo '<script type=t"ext/javascript">alert("submission successfully")</script>';
+use PHPMailer\PHPMailer\PHPMailer;
+require_once 'PHPMailer/src/Exception.php';
+require_once 'PHPMailer/src/PHPMailer.php';
+require_once 'PHPMailer/src/SMTP.php';
+$mail=new PHPMailer(true);
+try{
+    $mail->isSMTP();
+    $mail->Host='smtp.gmail.com';
+    $mail->SMTPAuth=true;
+    $mail->Username="moorthyponnusamy2019@gmail.com" ;
+    $mail->Password="uqfebwjxipvutgrq";
+    $mail->SMTPSecure="tls";
+    $mail->Port=587;
+    
+    $mail->setfrom($_SESSION['email'] );
+    $mail->addAddress("moorthyponnusamy2019@gmail.com");
+     
+    $mail->isHTML(true);
+    $mail->Subject="message recivied from:".$_SESSION['name'];
+    $mail->Body = '
+    <b>Name:</b> ' . $_SESSION['name'] . '<br>
+    <b>Email:</b> ' . $_SESSION['email'] . '<br>
+    <b>Phone:</b> ' . $_SESSION['phone'] . '<br>
+    <b>Gender:</b> ' . $_SESSION['gender'] . '<br>
+    <b>Address:</b> ' . $_SESSION['address'] . '<br>
+    <b>Date:</b> ' . $_SESSION['preferred_contact_datetime'] . '<br>
+    <b>Type:</b> ' . $_SESSION["contact_type"] . '<br>
+    <b>Description:</b> ' . $_SESSION["description"] . '<br>';
+
+
+    $mail->send();
+    if( $mail->send())
+    {
+        echo '<script type="text/javascript">alert("Submission successful")</script>';
+    }
+     else {
+        echo '<script type="text/javascript">alert("Try again later")</script>';
+     }
+}catch (Exception $e) {
+    echo '<script type="text/javascript">alert("Error: ' . $e->getMessage() . '")</script>';
 }
-else
-{
-echo '<script type=t"ext/javascript">alert("try again,try later")</script>';
-}
+
 ?>
 

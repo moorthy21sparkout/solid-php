@@ -9,10 +9,11 @@
     <label for="datetime-local"><h4>date and time</h4></label>
     <input type="datetime-local" name="preferred_contact_datetime" required>
     <label for="checkbox">checkbox</label>
-    Email<input type="checkbox" name="preferred_contact_type[]" value="email"><br>
-    Phone<input type="checkbox" name="preferred_contact_type[]" value="phone"><br>
+    Email<input type="checkbox" name="contact_type" value="email"><br>
+    Phone<input type="checkbox" name="contact_type" value="phone"><br>
     <input type="file" name="file"><br>
     <textarea name="description" placeholder="Description" required></textarea><br>
+    <div class="md"><?php $alert; ?></div>
     <button type="submit" name="sub_info">Submit</button>
     </body>
 </form>
