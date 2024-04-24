@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <title>Personal Information</title>
-    </head>
-    
 </head>
+
+</head>
+
 <body>
     <div class="container">
         <h1>Personal Information</h1>
         <form action="session.php" method="post">
             <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
-            
+                <input type="text" id="name" name="name" required><br>
+
             <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            
+                <input type="email" id="email" name="email" required><br>
+
             <label for="phone">Phone:</label><br>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]+" required><br>
-            
-            <label for="gender">Gender:</label>
-            <label for="male"><input type="radio" id="male" name="gender">male</label>
-           
+                <input type="tel" id="phone" name="phone" pattern="[0-9]+" required><br>
+
+            <label for="gender">Gender:</label><label for="male">
+                <input type="radio" id="male"name="gender">male</label>
+
             <label for="female"><input type="radio" id="female" name="gender">female</label>
-           
-            <label for="other"><input type="radio" id="other" name="gender" >others</label>
-          <br>
+
+            <label for="other"><input type="radio" id="other" name="gender">others</label>
+            <br>
             <label for="address">Address:</label><br>
             <textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
-            
-            <input type="submit" value="nextpage" name="sub">
+
+             <input type="submit" value="nextpage" name="sub">
         </form>
-     </div>       
+
+
+    </div>
 </body>
+
 </html>

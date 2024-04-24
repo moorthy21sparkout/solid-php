@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <h1>Element</h1>
+    <p id="demo">how its going on</p>
+    <p id="intro"></p>
+    <script>
+        const element = document.getElementById("demo")
+        //demo content stroe in const element
+        document.getElementById("intro").innerHTML = "the information is " + element.innerHTML
+        //we call the element the content is show
+    </script>
+</body>
+
+</html>
+<html>
+
+<body>
+    <p id="demos"></p>
+    <script>
+        document.getElementById("demos").innerHTML = "today day :" + Date();
+    </Script>
+</body>
+
+</html>

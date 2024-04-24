@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form name="sub_info" id="support-info-form" class="next-form" action="session.php" method="post"
+        enctype="multipart/form-data">
+        <h2>Support Information</h2>
+        <label for="datetime-local">
+            <h4>date and time</h4>
+        </label>
+        <input type="datetime-local" name="preferred_contact_datetime" required>
+        <label for="checkbox">checkbox</label>
+        Email<input type="checkbox" name="contact_type" value="email"><br>
+        Phone<input type="checkbox" name="contact_type" value="phone"><br>
+        <input type="file" name="file"><br>
+        <textarea name="description" placeholder="Description" required></textarea><br>
+        <button type="submit" name="sub_info">Submit</button>
+</body>
+</form>
+
+</html>

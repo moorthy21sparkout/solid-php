@@ -1,0 +1,27 @@
+<html>
+
+<body>
+    <button type="button" onclick="this.innerHTML='dont touch'">clickme
+
+    </button>
+</body>
+
+</html>
+
+<html>
+
+<body>
+
+    <button type="button" onclick="changeText(this)">
+        <h1>Click on this text!</h1>
+    </button>
+
+    <script>
+        function changeText(id) {
+            id.innerHTML = "Ooops!";
+        }
+    </script>
+
+</body>
+
+</html>
