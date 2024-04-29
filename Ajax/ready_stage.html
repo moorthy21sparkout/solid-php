@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>ajax</title>
+</head>
+
+<body>
+
+    <h2>onreadystatechange</h2>
+    <div id="demo">
+        <p>ajax intro</p>
+        <button type="button" onclick="load()">click here</button>
+    </div>
+    <script>
+        function load() {
+            const a = new XMLHttpRequest();
+            a.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+            }
+            a.open("GET", "ajax.txt");
+            a.send();
+        }
+    </script>
+
+</body>
+
+</html>

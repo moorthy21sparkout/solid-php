@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>XMLHttprequest</title>
+</head>
+
+<body>
+    <h1>hi everyone</h1>
+    <div id="demo">
+        <p>ajax into</p>
+        <button type="button" onclick="loadfunction()">click here</button>
+    </div>
+    <script>
+        function loadfunction() {
+            //create the object
+            const i = new XMLHttpRequest();
+            //his creates a new instance of the XMLHttpRequest object.
+            //callback functin
+            i.onload = function () {
+                document.getElementById("demo").innerHTML = this.responseText;
+                //responcetext ->is mean respone the same text
+            }
+            i.open("GET", "ajax.txt");
+            i.send();
+        }
+
+
+
+    </script>
+</body>
+
+</html>
